@@ -1,5 +1,8 @@
 package com.belose;
 
+/**
+ * This is basic single linked list implmentation
+ */
 public class LinkedListDemo {
     transient int size = 0;
     ListNode head;
