@@ -1,4 +1,4 @@
-package com.belose;
+package com.belose.stack;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,6 +22,8 @@ public class StackFromScratch {
 
         System.out.println("Size of stack after removal: " + integerStackModel.size());
 
+        System.out.println("Return firstElement from top: " + integerStackModel.peek());
+
     }
 }
 
@@ -38,12 +40,27 @@ class StackModel<E> {
         return data;
     }
 
+    /**
+     * To remove the element from stack
+     *
+     * @return E
+     */
     public E pop() {
         if (!dataList.isEmpty()) {
             int indexToPop = dataList.size() - 1;
             return dataList.remove(indexToPop);
         }
         return null;
+    }
+
+    /**
+     * To retrieve element present at the top of the Stack
+     *
+     * @return E
+     */
+    public E peek() {
+        int topElementIndex = this.size() - 1;
+        return this.dataList.get(topElementIndex);
     }
 }
 

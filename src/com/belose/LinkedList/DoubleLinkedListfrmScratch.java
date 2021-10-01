@@ -1,4 +1,4 @@
-package com.belose;
+package com.belose.LinkedList;
 
 public class DoubleLinkedListfrmScratch<E> {
 

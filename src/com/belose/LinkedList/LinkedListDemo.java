@@ -1,4 +1,4 @@
-package com.belose;
+package com.belose.LinkedList;
 
 /**
  * This is basic single linked list implmentation
