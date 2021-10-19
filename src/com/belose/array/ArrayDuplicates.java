@@ -1,4 +1,4 @@
-package com.belose;
+package com.belose.array;
 
 import java.util.HashSet;
 
