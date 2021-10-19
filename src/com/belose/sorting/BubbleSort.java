@@ -1,8 +1,6 @@
 package com.belose.sorting;
 
-import com.belose.array.ArrayDuplicates;
 import java.util.Arrays;
-import java.util.stream.Collectors;
 
 public class BubbleSort {
 
