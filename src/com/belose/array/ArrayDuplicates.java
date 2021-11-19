@@ -29,9 +29,9 @@ import java.util.HashSet;
 public class ArrayDuplicates {
     public boolean containsDuplicate(int[] nums) {
         HashSet<Integer> numbers = new HashSet<>();
-        for(int i=0; i<nums.length; i++) {
+        for (int i = 0; i < nums.length; i++) {
             boolean isAdded = numbers.add(nums[i]);
-            if(!isAdded){
+            if (!isAdded) {
                 return true;
             }
         }
