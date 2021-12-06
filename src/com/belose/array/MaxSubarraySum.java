@@ -59,7 +59,7 @@ public class MaxSubarraySum {
         if (maxSubArrayStartIndex == maxSubArrayEndIndex) {
             return new int[]{nums[maxSubArrayStartIndex]};
         } else {
-            return Arrays.copyOfRange(nums, maxSubArrayStartIndex, maxSubArrayEndIndex);
+            return Arrays.copyOfRange(nums, maxSubArrayStartIndex, maxSubArrayEndIndex+1);
         }
     }
 
