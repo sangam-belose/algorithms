@@ -32,6 +32,9 @@ public class CyclicRotation {
 
         System.out.println("Using Another arr cycle rotation: " + Arrays.toString(
                 rotateUsingAnotherArrRotation(arr2, k2)));
+
+        System.out.println("Using reverse technique rotation: " + Arrays.toString(
+                rotateUsingReverse(new int[]{3, 8, 9, 7, 6}, 3)));
     }
 
     public static int[] rotateUsingInplaceRotation(int[] arr, int k) {
@@ -63,5 +66,30 @@ public class CyclicRotation {
 
         return result;
     }
+
+    public static void reverse(int []arr, int low, int high) {
+        while(low<high){
+            int temp = arr[low];
+            arr[low] = arr[high];
+            arr[high] = temp;
+            low++;
+            high--;
+        }
+    }
+
+    //Best Approach
+    public static int[] rotateUsingReverse(int [] nums, int k) {
+
+        int n = nums.length;
+        k = k%n;
+
+        reverse(nums, 0, n-k-1);
+        reverse(nums, n-k, n-1);
+        reverse(nums, 0, n-1);
+
+        return nums;
+        
+    }
+
 
 }
