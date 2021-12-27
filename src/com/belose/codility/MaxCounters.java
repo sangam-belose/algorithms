@@ -48,7 +48,8 @@ public class MaxCounters {
             else if(results[x] < startLine) results[x] = startLine+1;
             else results[x] +=1;
 
-            if(i<=number && results[x] > maxCounter) maxCounter = results[x];
+            if(i<=number && results[x] > maxCounter)
+                maxCounter = results[x];
         }
 
         for(int i=0; i<results.length; i++)

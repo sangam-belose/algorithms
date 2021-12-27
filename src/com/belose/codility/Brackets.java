@@ -32,6 +32,7 @@ public class Brackets {
         System.out.println(solution("{[()()]}"));
         System.out.println(solution("{[())]}"));
         System.out.println(solution("{[)]}"));
+        System.out.println(solution("[([[{()}]])()]"));
     }
 
     public static int solution(String S) {
