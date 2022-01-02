@@ -19,6 +19,7 @@ class GCD {
   public static void main(String args[]) {
 
     System.out.println("Finding GCD of two numbers");
+    System.out.println("GCD of 27 and 39 = "+GCD.getGreatedCommonDivisor(27, 39));
     System.out.println("GCD of 12 and 96 = "+GCD.getGreatedCommonDivisor(12, 96));
     System.out.println("GCD of 20 and 8 = "+GCD.getGreatedCommonDivisor(20, 8));
     System.out.println("GCD of 50 and 15 = "+GCD.getGreatedCommonDivisor(50, 15));

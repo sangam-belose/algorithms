@@ -12,7 +12,7 @@ public class MaxProfit {
                 new MaxProfit().solution(new int[]{23171, 21011, 21123, 21366, 21013, 21367}));
 
         System.out.println(Arrays.toString(new MaxProfit().findBuyAndSellPrice(
-                new int[]{23171, 21011, 21123, 21366, 21013, 21367})));
+                new int[]{21000, 21011, 21123, 21366, 21013, 21367, 21361})));
 
     }
 
@@ -35,7 +35,9 @@ public class MaxProfit {
 
         int startIndex = 1;
         int endIndex = 1;
-        int startIndexforNow = 1;
+
+        //if this is made 1 it skip first value in certain cases
+        int startIndexforNow = 0;
 
         for (int i = 1; i < nums.length; i++) {
 
